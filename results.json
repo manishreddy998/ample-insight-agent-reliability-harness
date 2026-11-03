@@ -1,82 +1,94 @@
 {
-  "0.0": {
-    "naive (no retry, no validation)": {
+  "n_tasks": 55,
+  "model": "qwen2.5-3b (Q4, CPU, Ollama)",
+  "naive": {
+    "all": {
+      "correct": 0.855,
+      "silently_wrong": 0.145,
+      "failed_loudly": 0.0,
+      "model_calls": 55,
+      "n": 55
+    },
+    "simple": {
       "correct": 1.0,
       "silently_wrong": 0.0,
       "failed_loudly": 0.0,
-      "tool_calls": 441
+      "model_calls": 25,
+      "n": 25
     },
-    "validation only": {
+    "multiple": {
+      "correct": 0.933,
+      "silently_wrong": 0.067,
+      "failed_loudly": 0.0,
+      "model_calls": 15,
+      "n": 15
+    },
+    "irrelevance": {
+      "correct": 0.533,
+      "silently_wrong": 0.467,
+      "failed_loudly": 0.0,
+      "model_calls": 15,
+      "n": 15
+    }
+  },
+  "validate": {
+    "all": {
+      "correct": 0.855,
+      "silently_wrong": 0.127,
+      "failed_loudly": 0.018,
+      "model_calls": 55,
+      "n": 55
+    },
+    "simple": {
       "correct": 1.0,
       "silently_wrong": 0.0,
       "failed_loudly": 0.0,
-      "tool_calls": 441
+      "model_calls": 25,
+      "n": 25
     },
-    "retry 2 + validation": {
+    "multiple": {
+      "correct": 0.933,
+      "silently_wrong": 0.067,
+      "failed_loudly": 0.0,
+      "model_calls": 15,
+      "n": 15
+    },
+    "irrelevance": {
+      "correct": 0.533,
+      "silently_wrong": 0.4,
+      "failed_loudly": 0.067,
+      "model_calls": 15,
+      "n": 15
+    }
+  },
+  "validate_repair": {
+    "all": {
+      "correct": 0.855,
+      "silently_wrong": 0.145,
+      "failed_loudly": 0.0,
+      "model_calls": 56,
+      "n": 55
+    },
+    "simple": {
       "correct": 1.0,
       "silently_wrong": 0.0,
       "failed_loudly": 0.0,
-      "tool_calls": 441
-    }
-  },
-  "0.1": {
-    "naive (no retry, no validation)": {
-      "correct": 0.86,
-      "silently_wrong": 0.03,
-      "failed_loudly": 0.11,
-      "tool_calls": 436
+      "model_calls": 25,
+      "n": 25
     },
-    "validation only": {
-      "correct": 0.86,
-      "silently_wrong": 0.0,
-      "failed_loudly": 0.14,
-      "tool_calls": 432
+    "multiple": {
+      "correct": 0.933,
+      "silently_wrong": 0.067,
+      "failed_loudly": 0.0,
+      "model_calls": 15,
+      "n": 15
     },
-    "retry 2 + validation": {
-      "correct": 0.993,
-      "silently_wrong": 0.0,
-      "failed_loudly": 0.007,
-      "tool_calls": 484
-    }
-  },
-  "0.2": {
-    "naive (no retry, no validation)": {
-      "correct": 0.77,
-      "silently_wrong": 0.047,
-      "failed_loudly": 0.183,
-      "tool_calls": 429
-    },
-    "validation only": {
-      "correct": 0.753,
-      "silently_wrong": 0.0,
-      "failed_loudly": 0.247,
-      "tool_calls": 418
-    },
-    "retry 2 + validation": {
-      "correct": 0.983,
-      "silently_wrong": 0.0,
-      "failed_loudly": 0.017,
-      "tool_calls": 528
-    }
-  },
-  "0.3": {
-    "naive (no retry, no validation)": {
-      "correct": 0.663,
-      "silently_wrong": 0.08,
-      "failed_loudly": 0.257,
-      "tool_calls": 420
-    },
-    "validation only": {
-      "correct": 0.65,
-      "silently_wrong": 0.0,
-      "failed_loudly": 0.35,
-      "tool_calls": 403
-    },
-    "retry 2 + validation": {
-      "correct": 0.973,
-      "silently_wrong": 0.0,
-      "failed_loudly": 0.027,
-      "tool_calls": 583
+    "irrelevance": {
+      "correct": 0.533,
+      "silently_wrong": 0.467,
+      "failed_loudly": 0.0,
+      "model_calls": 16,
+      "n": 15
     }
   }
 }

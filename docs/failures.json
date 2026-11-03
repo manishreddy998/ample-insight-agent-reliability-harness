@@ -1,0 +1,368 @@
+{
+ "naive": [
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "calculateFinalPrice",
+    "arguments": {
+     "price": 100.0,
+     "discount_rate": 0.25,
+     "sales_tax": 0.1
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_60",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "identify_species",
+    "arguments": {
+     "sequence": "ATCG",
+     "database": "GenBank"
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_33",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "medical_records.get_disease_info",
+    "arguments": {
+     "disease_name": "motor neuron diseases",
+     "include_statistics": false
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_121",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "most_frequent_visitor",
+    "arguments": {
+     "museum_name": "Museum of Modern Art",
+     "start_date": "2022-01-01",
+     "end_date": "2022-12-31",
+     "minimum_visits": 1
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_160",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "color_complimentary",
+    "arguments": {
+     "color": "blue",
+     "color_format": "RGB"
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_148",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "calculate_projectile_range",
+    "arguments": {
+     "initial_velocity": "v",
+     "angle": "theta",
+     "time": "t"
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_16",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "hotel_search.find_hotels",
+    "arguments": {
+     "location": "New York, NY",
+     "amenities": [
+      "Breakfast",
+      "Fitness Centre"
+     ]
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_232",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "calculate_integral",
+    "arguments": {
+     "func": "3*x**2",
+     "a": 1,
+     "b": 2
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "multiple_33",
+   "cat": "multiple"
+  }
+ ],
+ "validate": [
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "calculateFinalPrice",
+    "arguments": {
+     "price": 100.0,
+     "discount_rate": 0.25,
+     "sales_tax": 0.1
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_60",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "identify_species",
+    "arguments": {
+     "sequence": "ATCG",
+     "database": "GenBank"
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_33",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "medical_records.get_disease_info",
+    "arguments": {
+     "disease_name": "motor neuron diseases",
+     "include_statistics": false
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_121",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "most_frequent_visitor",
+    "arguments": {
+     "museum_name": "Museum of Modern Art",
+     "start_date": "2022-01-01",
+     "end_date": "2022-12-31",
+     "minimum_visits": 1
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_160",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "color_complimentary",
+    "arguments": {
+     "color": "blue",
+     "color_format": "RGB"
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_148",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "failed_loudly",
+   "call": {
+    "name": "calculate_projectile_range",
+    "arguments": {
+     "initial_velocity": "v",
+     "angle": "theta",
+     "time": "t"
+    }
+   },
+   "error": "argument 'initial_velocity' must be float, got str",
+   "attempts": 1,
+   "id": "irrelevance_16",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "hotel_search.find_hotels",
+    "arguments": {
+     "location": "New York, NY",
+     "amenities": [
+      "Breakfast",
+      "Fitness Centre"
+     ]
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_232",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "calculate_integral",
+    "arguments": {
+     "func": "3*x**2",
+     "a": 1,
+     "b": 2
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "multiple_33",
+   "cat": "multiple"
+  }
+ ],
+ "validate_repair": [
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "calculateFinalPrice",
+    "arguments": {
+     "price": 100.0,
+     "discount_rate": 0.25,
+     "sales_tax": 0.1
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_60",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "identify_species",
+    "arguments": {
+     "sequence": "ATCG",
+     "database": "GenBank"
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_33",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "medical_records.get_disease_info",
+    "arguments": {
+     "disease_name": "motor neuron diseases",
+     "include_statistics": false
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_121",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "most_frequent_visitor",
+    "arguments": {
+     "museum_name": "Museum of Modern Art",
+     "start_date": "2022-01-01",
+     "end_date": "2022-12-31",
+     "minimum_visits": 1
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_160",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "color_complimentary",
+    "arguments": {
+     "color": "blue",
+     "color_format": "RGB"
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_148",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "calculate_projectile_range",
+    "arguments": {
+     "initial_velocity": 30.0,
+     "angle": 45.0,
+     "time": 2.0
+    }
+   },
+   "error": null,
+   "attempts": 2,
+   "id": "irrelevance_16",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "hotel_search.find_hotels",
+    "arguments": {
+     "location": "New York, NY",
+     "amenities": [
+      "Breakfast",
+      "Fitness Centre"
+     ]
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "irrelevance_232",
+   "cat": "irrelevance"
+  },
+  {
+   "status": "silently_wrong",
+   "call": {
+    "name": "calculate_integral",
+    "arguments": {
+     "func": "3*x**2",
+     "a": 1,
+     "b": 2
+    }
+   },
+   "error": null,
+   "attempts": 1,
+   "id": "multiple_33",
+   "cat": "multiple"
+  }
+ ]
+}

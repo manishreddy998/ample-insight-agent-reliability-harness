@@ -1,6 +1,6 @@
 from agentrt.tools import Tools
 from agentrt.runtime import Runtime
-from agentrt.evaluate import score
+from agentrt.simulate import score
 
 
 def test_no_failures_all_correct():
